@@ -1,0 +1,16 @@
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600;700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+  font-family: stratos;
+  src: url(https://consumer-component-library.roocdn.com/26.24.1/static/fonts/stratos-semibold.woff2)
+}
+
+*{
+  @apply text-coal-500;
+  font-family: 'IBM Plex Sans', sans-serif;
+}
+

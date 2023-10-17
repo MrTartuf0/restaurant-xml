@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- <?xml-model href="file.xsd" type="application/xml" schematypens="http://www.w3.org/2001/XMLSchema"?> -->
+<restaurant>
+  <name>Rosticceria I Mori</name>
+  <type>Pizza·Italiano</type>
+  <distance>1.29 km</distance>
+  <description>Ci siamo impegnati affinché nel nostro piccolo angolo di Sicilia voi possiate vivere un esperienza inedita, di un altro livello... L'amore e la dedizione in ogni nostro singolo piatto, l'attenzione alla cura dei dettagli e un po' di fantasia, questo sono I Mori.</description>
+  <phone-number>+393279484011</phone-number>
+  <address>4 Largo Caduti di Nasiriya, Terni, 05100</address>
+  <banner-img>~/assets/img/rosticceria_mori.jpeg</banner-img>
+  <rating>4.6 Eccellente</rating>
+  <rating-number>467</rating-number>
+  <minimum-order>10,00 €</minimum-order>
+
+  <menu>
+    <product>
+      <name></name>
+    </product>
+  </menu>
+
+
+</restaurant>
