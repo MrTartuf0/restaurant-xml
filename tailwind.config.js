@@ -5,6 +5,7 @@ export default {
     colors: {
       'acqua': '#00ccbc',
       'coal': {
+        200: '#e2e5e5',
         300: '#abadad',
         400: '#585c5c',
         500: '#2e3333',

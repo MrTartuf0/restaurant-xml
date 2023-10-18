@@ -23,12 +23,28 @@
       </div>
     </section>
   </header>
-  <nav class="px-16 py-6 gap-2 uppercase flex border-t border-t-black/10 sticky top-0 bg-white">
-    <div class="bg-acqua text-white font-semibold text-sm px-4 py-0.5 rounded-full">arancine</div>
-    <div class="bg-white text-acqua font-semibold text-sm px-4 py-0.5 rounded-full">peccati di gola</div>
+  <nav class="px-16 py-6 gap-2 flex border-t border-t-black/10 sticky top-0 bg-white">
+    <ItemNavbar active href="arancine">arancine</ItemNavbar>
+    <ItemNavbar>peccati di gola</ItemNavbar>
+    <ItemNavbar>fish burger</ItemNavbar>
+    <ItemNavbar>pizze e calzoni</ItemNavbar>
+    <ItemNavbar>dolci</ItemNavbar>
+    <ItemNavbar>bevande e lattine</ItemNavbar>
+    <ItemNavbar>vini bianchi in bottiglia</ItemNavbar>
   </nav>
   <main class="px-16 pt-8 bg-background w-full h-[4000px]">
-    Main menù
+    <section>
+      Main menu
+    </section>
+    <aside>
+      <div class="bg-white px-4 pb-4 w-full">
+        <div class="flex flex-col gap-1 items-center pt-8">
+          <img class="w-12" src="~/assets/icons/basket.svg" alt="basket">
+          <p class="text-coal-300">Il carrello è vuoto</p>
+        </div>
+        <AppButton class="mt-12" variant="disabled">Vai al pagamento</AppButton>
+      </div>
+    </aside>
   </main>
 </template>
 
@@ -49,5 +65,11 @@
   }
   nav{
     box-shadow: 0 2px 4px #0000000d;
+  }
+  main{
+    display: grid;
+    gap: 24px;
+    grid-template-columns: 1fr auto;
+    grid-template-areas: "menu basket";
   }
 </style>
