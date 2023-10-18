@@ -1,6 +1,6 @@
 <template>
   <button 
-  class="px-6 py-3 font-bold rounded"
+  class="px-6 py-3 font-bold rounded w-full"
   :class="{
     'bg-coal-200 text-coal-300': variant === 'disabled',
     'bg-acqua text-white': variant === 'primary'
