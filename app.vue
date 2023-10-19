@@ -70,6 +70,7 @@
   </main>
 
   <AppModal ref="infoModal" :data="data"/>
+  <FoodModal ref="modalFood" :data="data"/>
 
 </template>
 
