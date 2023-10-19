@@ -8,22 +8,24 @@
         <img @click="closeModal()" class="w-6 cursor-pointer" src="~/assets/icons/close.svg" alt="close">
       </header>
       <main>
-        <h1 class="text-2xl px-4 pt-6 pb-4 font-bold">Informazioni su Rosticceria I Mori</h1>
+        <h1 class="text-2xl px-4 pt-6 pb-4 font-bold">Informazioni su {{ data?.name }}</h1>
         <div class="bg-white border-y border-y-black/10 p-4 text-sm">
-          Ci siamo impegnati affinché nel nostro piccolo angolo di Sicilia voi possiate vivere un esperienza inedita, di un altro livello... L'amore e la dedizione in ogni nostro singolo piatto, l'attenzione alla cura dei dettagli e un po' di fantasia, questo sono I Mori.
+          {{ data?.description }}
         </div>
         <h1 class="text-2xl px-4 pt-6 pb-4 font-bold">Allergeni</h1>
         <div class="bg-white border-y border-y-black/10 p-4">
-          <p class="text-sm">Hai delle domande? Chiedi a Rosticceria I Mori informazioni più dettagliate sui metodi di cottura e sugli ingredienti utilizzati.</p>
-          <a href="tel:+393279484011" class="flex gap-2 items-center pt-4 border-t border-t-black/10 mt-4">
+          <p class="text-sm">Hai delle domande? Chiedi a {{ data?.name }} informazioni più dettagliate sui metodi di cottura e sugli ingredienti utilizzati.</p>
+          <a :href="'tel:' + data?.phoneNumber" class="flex gap-2 items-center pt-4 border-t border-t-black/10 mt-4">
             <img class="w-6" src="~/assets/icons/phone.svg" alt="phone">
-            <p class="text-acqua">Chiama Rosticceria I Mori al numero +393279484011</p>
+            <p class="text-acqua">Chiama {{ data?.name }} al numero {{ data?.phoneNumber }}</p>
           </a>
         </div>
         <h1 class="text-2xl px-4 pt-6 pb-4 font-bold">Indirizzo</h1>
         <div class="bg-white border-y border-y-black/10 p-4">
           <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2938.8426624216486!2d12.643075312723228!3d42.55863367105506!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x132efb4efa0c32e5%3A0xb0815e760b8eaa66!2sRosticceria%20I%20Mori!5e0!3m2!1sit!2sit!4v1697632905983!5m2!1sit!2sit" width="100%" height="190" style="border:0;" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-          <p class="pt-4 text-sm">4 Largo Caduti di Nasiriya, Terni, 05100</p>
+          <p class="pt-4 text-sm">
+            {{ data?.address }}
+          </p>
           <a href="https://www.google.com/maps/search/?api=1&query=Rosticceria+I+Mori,4+Largo+Caduti+di+Nasiriya%2C+Terni%2C+05100" class="flex gap-2 items-center pt-4 border-t border-t-black/10 mt-4">
             <img class="w-6" src="~/assets/icons/map.svg" alt="phone">
             <p class="text-acqua">Vedi Mappa</p>
@@ -48,5 +50,12 @@ function openModal() {
 defineExpose({
   openModal,
   closeModal
+})
+// Props
+defineProps({
+  data: {
+    type: Object,
+    required: true,
+  }
 })
 </script>

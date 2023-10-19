@@ -2,21 +2,247 @@
 <!-- <?xml-model href="file.xsd" type="application/xml" schematypens="http://www.w3.org/2001/XMLSchema"?> -->
 <restaurant>
   <name>Rosticceria I Mori</name>
-  <type>Pizza·Italiano</type>
+  <type>Pizza · Italiano</type>
   <distance>1.29 km</distance>
   <description>Ci siamo impegnati affinché nel nostro piccolo angolo di Sicilia voi possiate vivere un esperienza inedita, di un altro livello... L'amore e la dedizione in ogni nostro singolo piatto, l'attenzione alla cura dei dettagli e un po' di fantasia, questo sono I Mori.</description>
-  <phone-number>+393279484011</phone-number>
+  <phoneNumber>+393279484011</phoneNumber>
   <address>4 Largo Caduti di Nasiriya, Terni, 05100</address>
-  <banner-img>~/assets/img/rosticceria_mori.jpeg</banner-img>
+  <bannerImg>_nuxt/assets/img/rosticceria_mori.jpeg</bannerImg>
   <rating>4.6 Eccellente</rating>
-  <rating-number>467</rating-number>
-  <minimum-order>10,00 €</minimum-order>
-
+  <ratingNumber>467</ratingNumber>
+  <minimumOrder>10,00 €</minimumOrder>
+  <openingHour>12:00</openingHour>
+  
   <menu>
-    <product>
-      <name></name>
-    </product>
+    <category>
+      <name>ARANCINE</name>
+      <shortName>arancine</shortName>
+      <product>
+        <name>ACCARNE</name>
+        <description>RISO ZAFFERANO, RAGU' E PISELLI</description>
+        <price>3,20 €</price>
+      </product>
+      <product>
+        <name>ABBURRO</name>
+        <description>RISO ZAFFERANO, BESCIAMELLA, PROSCIUTTO COTTO E MORTADELLA</description>
+        <price>3,20 €</price>
+      </product>
+      <product>
+        <name>CARBONARA</name>
+        <description>RISO CACIO E PEPE, BESCIAMELLA ALL'UOVO, PANCETTA, COLATA DI PECORINO</description>
+        <price>4,50 €</price>
+      </product>
+      <product>
+        <name>PISTACCHIOSA</name>
+        <description>RISO CACIO E PEPE, BESCIAMELLA, MORTADELLA E COLATA DI PISTACCHIO</description>
+        <price>4,50 €</price>
+      </product>
+      <product>
+        <name>BELL'ASSAI</name>
+        <description>RISO CACIO E PEPE, SALSICCIA, NDUJA, GORGONZOLA, COLATA I GORGONZOLA</description>
+        <price>4,50 €</price>
+      </product>
+      <product>
+        <name>PORCAZZA</name>
+        <description>RISO ZAFFERANO, PULLED PORK, PROVOLA AFFUMICATA, PANCETTA E COLATA DI CHEDDAR</description>
+        <price>4,50 €</price>
+      </product>
+      <product>
+        <name>GAMBERETTO</name>
+        <description>RISO NERO DI SEPPIA, GAMBERETTI E ZUCCHINE</description>
+        <price>3,70 €</price>
+      </product>
+      <product>
+        <name>CONTADINA</name>
+        <description>RISO CACIO E PEPE, GUANCIALE, CREMA DI FAVE E CACIO CAVALLO</description>
+        <price>3,70 €</price>
+      </product>
+      <product>
+        <name>VUCCIRIA</name>
+        <description>riso nero di seppia, besciamella e salmone affumicato</description>
+        <price>3,70 €</price>
+      </product>
+    </category>
+    <category>
+      <name>PECCATI DI GOLA</name>
+      <shortName>peccatiDiGola</shortName>
+      <product>
+        <name>PATATE FRITTE CLASSICHE</name>
+        <price>4,00 €</price>
+      </product>
+      <product>
+        <name>panelle e limone</name>
+        <price>5,00 €</price>
+      </product>
+      <product>
+        <name>CROCCHE ' VERDI</name>
+        <description>CROCCHE' DI PATATE CON MORTADELLA CROCCANTE E PISTACCHIO, 6PZ.</description>
+        <price>7,50 €</price>
+      </product>
+      <product>
+        <name>CROCCHE' GIALLI</name>
+        <description>CROCCHE' DI PATATE CON SALSA CHEDDAR E BECON, 6PZ.</description>
+        <price>7,50 €</price>
+      </product>
+      <product>
+        <name>STREET FOOD</name>
+        <description>PANELLE, ARANCINETTE, PATATINE DIPPERS</description>
+        <price>9,00 €</price>
+      </product>
+      <product>
+        <name>CROCCHETTONE CACIOTTO</name>
+        <description>CROCCHETTONE DI PATATE, CACIOCAVALLO E CIME DI RAPA</description>
+        <price>9,00 €</price>
+      </product>
+      <product>
+        <name>CROCCHETTONE PULLED</name>
+        <description>pulled pork home made, cipolla crispy, cheddar, bacon, cetrioli in agrodolce, cavolo cappuccio e salsa barbecue</description>
+        <price>10,00 €</price>
+      </product>
+      <product>
+        <name>GAMBERI CROCCANTI</name>
+        <description>GAMBERI CROCCANTI CON SALSA GRECA, 6PZ.</description>
+        <price>10,50 €</price>
+      </product>
+      <product>
+        <name>FRITTURA DI PESCE</name>
+        <description>CALAMARI E GAMBERI</description>
+        <price>15,00 €</price>
+      </product>
+    </category>
+    <category>
+      <name>FISH BURGER</name>
+      <shortName>fishBurger</shortName>
+      <description>HAMBURGER DI PESCE GOURMET, PANE HOMEMADE I BURGER SONO SERVITI CON PATATINE DIPPERS</description>
+      <product>
+        <name>FISH TONNO</name>
+        <description>TARTARE DI TONNO, SEMI DI PAPAVERO, CIPOLLA CARAMELLATA, BURRATA, INSALATA</description>
+        <price>17,00 €</price>
+      </product>
+      <product>
+        <name>FISH SALMONE</name>
+        <description>SALMONE IN CROSTA DI SESAMO, BAGUETTE, MAIONESE AL LIMONE, INSALATA</description>
+        <price>17,00 €</price>
+      </product>
+      <product>
+        <name>FISH POLPO</name>
+        <description>POLPO CROCCANTE, MAIONESE ALLO YOGURT GRECO, RUCOLA, INSALATA</description>
+        <price>17,00 €</price>
+      </product>
+    </category>
+    <category>
+      <name>PIZZE E CALZONI</name>
+      <shortName>pizzeECalzoni</shortName>
+      <product>
+        <name>BIGA</name>
+        <description>BIGA 48H, FIOR DI LATTE, CREMA DI PORCINI E TARTUFO</description>
+        <price>7,00 €</price>
+      </product>
+      <product>
+        <name>MARGHERITA</name>
+        <description>BIGA 48H, POMODORO, FIOR DI LATTE, BASILICO E OLIO EVO</description>
+        <price>6,00 €</price>
+      </product>
+      <product>
+        <name>PORCINI</name>
+        <description>BIGA 48H, FIOR DI LATTE, CREMA DI PORCINI, FUNGHI MISTI, RUCOLA E SCAGLIE DI PARMIGIANO</description>
+        <price>8,00 €</price>
+      </product>
+      <product>
+        <name>MONTANARA</name>
+        <description>FRITTA 48H, POMODORO, FIOR DI LATTE, NDUJA, COLATA DI PARMIGIANO</description>
+        <price>7,00 €</price>
+      </product>
+      <product>
+        <name>COLFRE'</name>
+        <description>FRITTA 48H, POMODORO, FIOR DI LATTE, SALAME PICCANTE, OLIVE E CAPPERI</description>
+        <price>7,00 €</price>
+      </product>
+      <product>
+        <name>SFIZIOSA</name>
+        <description>FRITTA 48H, POMODORO, FIOR DI LATTE, MORTADELLA, OLIVE, COLATA DI PISTACCHIO</description>
+        <price>7,00 €</price>
+      </product>
+      <product>
+        <name>ORTOLANA</name>
+        <description>BIGA 48H, POMODORO, FIOR DI LATTE, VERDURE DI STAGIONE, CAPPERI E OLIVE</description>
+        <price>7,00 €</price>
+      </product>
+      <product>
+        <name>PIZZA BIANCA</name>
+        <description>BIGA 48H, FIOR DI LATTE, PROVOLA AFFUMICATA, PANCETTA E TIMO</description>
+        <price>7,00 €</price>
+      </product>
+      <product>
+        <name>CLASSICA</name>
+        <description>BIGA 48H, POMODORO, FIOR DI LATTE, SALAME PICCANTE</description>
+        <price>7,00 €</price>
+      </product>
+      <product>
+        <name>DIAVOLA</name>
+        <description>BIGA 48H, POMODORO, FIOR DI LATTE, NDUJA, SALAME PICCANTE</description>
+        <price>7,00 €</price>
+      </product>
+    </category>
+    <category>
+      <name>DOLCI</name>
+      <shortName>dolci</shortName>
+      <product>
+        <name>CANNOLO</name>
+        <price>3,50 €</price>
+      </product>
+      <product>
+        <name>SFOGLIA</name>
+        <price>4,00 €</price>
+      </product>
+      <product>
+        <name>PANNA COTTA</name>
+        <description>salsa di caramello al burro salato</description>
+        <price>5,00 €</price>
+      </product>
+      <product>
+        <name>TIRAMISU'</name>
+        <description>CAFFE' E CACAO AMARO</description>
+        <price>5,00 €</price>
+      </product>
+    </category>
   </menu>
+  
+
+  <!-- <menu>
+    <category>
+      <name>ARANCINE</name>
+      <shortName>arancine</shortName>
+      <product>
+        <name>ACCARNE</name>
+        <description>RISO ZAFFERANO, RAGU' E PISELLI</description>
+        <price>3,20 €</price>
+      </product>
+      <product>
+        <name>ABBURRO</name>
+        <description>RISO ZAFFERANO, BESCIAMELLA, PROSCIUTTO COTTO E MORTADELLA</description>
+        <price>3,20 €</price>
+      </product>
+    </category>
+    <category>
+      <name>FISH BURGER</name>
+      <shortName>fishBurger</shortName>
+      <description>HAMBURGER DI PESCE GOURMET, PANE HOMEMADE I BURGER SONO SERVITI CON PATATINE DIPPERS</description>
+      Next implementation, labels attached to food
+      outOfStock="true" hasGoodReviews="true" isPopular="true"
+      <product>
+        <name>FISH TONNO</name>
+        <description>TARTARE DI TONNO, SEMI DI PAPAVERO, CIPOLLA CARAMELLATA, BURRATA, INSALATA</description>
+        <price>17,00 €</price>
+        <outOfStock>true</outOfStock>
+      </product>
+      <product>
+        <name>FISH SALMONE</name>
+        <description>SALMONE CROCCANTE MARINATO ALLA SOIA E ZENZERO, CETRIOLI IN AGRO HOMEMADE, SPINACINO ALL'AGRO E SALSA TARTARA</description>
+        <price>17,00 €</price>
+      </product>
+    </category>
+  </menu> -->
 
 
 </restaurant>

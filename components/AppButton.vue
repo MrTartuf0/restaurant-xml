@@ -17,5 +17,4 @@
       validator: value => ['primary', 'disabled'].includes(value)
     }
   })
-  // defineExpose
 </script>
