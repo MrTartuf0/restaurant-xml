@@ -21,31 +21,37 @@
         <name>ACCARNE</name>
         <description>RISO ZAFFERANO, RAGU' E PISELLI</description>
         <price>3,20 €</price>
+        <image>_nuxt/assets/img/accarne.jpeg</image>
       </product>
       <product>
         <name>ABBURRO</name>
         <description>RISO ZAFFERANO, BESCIAMELLA, PROSCIUTTO COTTO E MORTADELLA</description>
         <price>3,20 €</price>
+        <image>_nuxt/assets/img/abburro.jpeg</image>
       </product>
       <product>
         <name>CARBONARA</name>
         <description>RISO CACIO E PEPE, BESCIAMELLA ALL'UOVO, PANCETTA, COLATA DI PECORINO</description>
         <price>4,50 €</price>
+        <image>_nuxt/assets/img/carbonara.jpeg</image>
       </product>
       <product>
         <name>PISTACCHIOSA</name>
         <description>RISO CACIO E PEPE, BESCIAMELLA, MORTADELLA E COLATA DI PISTACCHIO</description>
         <price>4,50 €</price>
+        <image>_nuxt/assets/img/pistacchiosa.jpeg</image>
       </product>
       <product>
         <name>BELL'ASSAI</name>
         <description>RISO CACIO E PEPE, SALSICCIA, NDUJA, GORGONZOLA, COLATA I GORGONZOLA</description>
         <price>4,50 €</price>
+        <image>_nuxt/assets/img/bellassai.jpeg</image>
       </product>
       <product>
         <name>PORCAZZA</name>
         <description>RISO ZAFFERANO, PULLED PORK, PROVOLA AFFUMICATA, PANCETTA E COLATA DI CHEDDAR</description>
         <price>4,50 €</price>
+        <image>_nuxt/assets/img/porcazza.jpeg</image>
       </product>
       <product>
         <name>GAMBERETTO</name>

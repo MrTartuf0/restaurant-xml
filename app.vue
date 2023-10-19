@@ -49,11 +49,11 @@
           {{ item.name }}
         </h1>
         <div class="grid grid-cols-3 gap-4">
-          <div v-for="product in item.product">
-            <h2>{{ product.name }}</h2>
-            <p>{{ product.description }}</p>
-            <p>{{ product.price }}</p>
-          </div>
+          <FoodCard v-for="product in item.product" :data="product">
+            <!-- <h2>{{ product.name }}</h2> -->
+            <!-- <p>{{ product.description }}</p> -->
+            <!-- <p>{{ product.price }}</p> -->
+          </FoodCard>
           <!-- <p>{{ data?.menu.category[0].product[0]?.outOfStock }}</p> -->
         </div>
       </div>
