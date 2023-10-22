@@ -2,6 +2,8 @@
 
 _Relazione TPSI 5CIA_
 
+### Link alla relazione progettata su Google Docs: [relazione-xml](https://docs.google.com/document/d/16Q87UcWEPophaX9hQOBLJ0TQ1nj_yhVQ8UUvzOkHOcw/edit?usp=sharing)
+
 Look at the [Nuxt 3 documentation](https://nuxt.com/docs/getting-started/introduction) to learn more.
 
 ## Setup
