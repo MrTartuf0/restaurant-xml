@@ -58,7 +58,7 @@
 
   <xs:simpleType name="imagePath">
     <xs:restriction base="xs:string">
-      <xs:pattern value="_nuxt\/assets\/img\/[A-z\d\-_]+\.(jpeg|jpg|png|gif|bmp|tiff|ico|svg|webp)"/>
+      <xs:pattern value="\/img\/[A-z\d\-_]+\.(jpeg|jpg|png|gif|bmp|tiff|ico|svg|webp)"/>
     </xs:restriction>
   </xs:simpleType>
 

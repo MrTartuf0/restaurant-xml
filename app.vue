@@ -26,7 +26,6 @@
 
   <nav class="px-16 py-6 gap-2 flex border-t border-t-black/10 sticky top-0 bg-white">
     <ItemNavbar :href="'#' + item.shortName" v-for="item in data?.menu.category">
-      {{ currentSection }}
       {{ item.name }}
     </ItemNavbar>
   </nav>
@@ -41,7 +40,7 @@
         </div>
         <div>
           <div class="w-11 h-11 rounded-full overflow-clip">
-            <img class="h-full w-full object-cover" src="~/assets/img/rosticceria_mori.jpeg" alt="pfp">
+            <img class="h-full w-full object-cover" :src="data?.bannerImg" alt="pfp">
           </div>
         </div>
       </div>
@@ -92,7 +91,7 @@ onMounted(() => {
       // console.log(this.responseXML.getElementsByTagName("restaurant")[0]);
     }
   };
-  xhttp.open("GET", "_nuxt/data.xml", true);
+  xhttp.open("GET", "/data.xml", true);
   xhttp.send();
 })
 

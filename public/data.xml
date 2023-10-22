@@ -7,7 +7,7 @@
   <description>Ci siamo impegnati affinché nel nostro piccolo angolo di Sicilia voi possiate vivere un esperienza inedita, di un altro livello... L'amore e la dedizione in ogni nostro singolo piatto, l'attenzione alla cura dei dettagli e un po' di fantasia, questo sono I Mori.</description>
   <phoneNumber>+393279484011</phoneNumber>
   <address>4 Largo Caduti di Nasiriya, Terni, 05100</address>
-  <bannerImg>_nuxt/assets/img/rosticceria_mori.jpeg</bannerImg>
+  <bannerImg>/img/rosticceria_mori.jpeg</bannerImg>
   <rating>4.6 Eccellente</rating>
   <ratingNumber>467</ratingNumber>
   <minimumOrder>10,00 €</minimumOrder>
@@ -21,37 +21,37 @@
         <name>ACCARNE</name>
         <description>RISO ZAFFERANO, RAGU' E PISELLI</description>
         <price>3,20 €</price>
-        <image>_nuxt/assets/img/accarne.jpeg</image>
+        <image>/img/accarne.jpeg</image>
       </product>
       <product>
         <name>ABBURRO</name>
         <description>RISO ZAFFERANO, BESCIAMELLA, PROSCIUTTO COTTO E MORTADELLA</description>
         <price>3,20 €</price>
-        <image>_nuxt/assets/img/abburro.jpeg</image>
+        <image>/img/abburro.jpeg</image>
       </product>
       <product>
         <name>CARBONARA</name>
         <description>RISO CACIO E PEPE, BESCIAMELLA ALL'UOVO, PANCETTA, COLATA DI PECORINO</description>
         <price>4,50 €</price>
-        <image>_nuxt/assets/img/carbonara.jpeg</image>
+        <image>/img/carbonara.jpeg</image>
       </product>
       <product>
         <name>PISTACCHIOSA</name>
         <description>RISO CACIO E PEPE, BESCIAMELLA, MORTADELLA E COLATA DI PISTACCHIO</description>
         <price>4,50 €</price>
-        <image>_nuxt/assets/img/pistacchiosa.jpeg</image>
+        <image>/img/pistacchiosa.jpeg</image>
       </product>
       <product>
         <name>BELL'ASSAI</name>
         <description>RISO CACIO E PEPE, SALSICCIA, NDUJA, GORGONZOLA, COLATA I GORGONZOLA</description>
         <price>4,50 €</price>
-        <image>_nuxt/assets/img/bellassai.jpeg</image>
+        <image>/img/bellassai.jpeg</image>
       </product>
       <product>
         <name>PORCAZZA</name>
         <description>RISO ZAFFERANO, PULLED PORK, PROVOLA AFFUMICATA, PANCETTA E COLATA DI CHEDDAR</description>
         <price>4,50 €</price>
-        <image>_nuxt/assets/img/porcazza.jpeg</image>
+        <image>/img/porcazza.jpeg</image>
       </product>
       <product>
         <name>GAMBERETTO</name>
@@ -84,13 +84,13 @@
         <name>CROCCHE ' VERDI</name>
         <description>CROCCHE' DI PATATE CON MORTADELLA CROCCANTE E PISTACCHIO, 6PZ.</description>
         <price>7,50 €</price>
-        <image>_nuxt/assets/img/croccheVerdi.jpeg</image>
+        <image>/img/croccheVerdi.jpeg</image>
       </product>
       <product>
         <name>CROCCHE' GIALLI</name>
         <description>CROCCHE' DI PATATE CON SALSA CHEDDAR E BECON, 6PZ.</description>
         <price>7,50 €</price>
-        <image>_nuxt/assets/img/croccheGialli.jpeg</image>
+        <image>/img/croccheGialli.jpeg</image>
       </product>
       <product>
         <name>STREET FOOD</name>
@@ -116,7 +116,7 @@
         <name>FRITTURA DI PESCE</name>
         <description>CALAMARI E GAMBERI</description>
         <price>15,00 €</price>
-        <image>_nuxt/assets/img/fritturaMista.jpeg</image>
+        <image>/img/fritturaMista.jpeg</image>
       </product>
     </category>
     <category>
@@ -151,7 +151,7 @@
         <name>MARGHERITA</name>
         <description>BIGA 48H, POMODORO, FIOR DI LATTE, BASILICO E OLIO EVO</description>
         <price>6,00 €</price>
-        <image>_nuxt/assets/img/margherita.jpeg</image>
+        <image>/img/margherita.jpeg</image>
       </product>
       <product>
         <name>PORCINI</name>
@@ -205,7 +205,7 @@
         <name>CANNOLO AL PISTACCHIO</name>
         <description>RICOTTA, GOCCE DI CIOCCOLATO E GRANELLA DI PISTACCHIO</description>
         <price>3,50 €</price>
-        <image>_nuxt/assets/img/cannoloPistacchio.jpeg</image>
+        <image>/img/cannoloPistacchio.jpeg</image>
       </product>
       <product>
         <name>SFOGLIA</name>
