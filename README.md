@@ -2,6 +2,10 @@
 
 _Relazione TPSI 5CIA_
 
+![Frame 1](https://github.com/MrTartuf0/restaurant-xml/assets/79630556/91b720d7-fb35-48df-9172-cde4ba6e5f48)
+
+![image](https://github.com/MrTartuf0/restaurant-xml/assets/79630556/3f9d69e0-63dc-479f-b113-e0d4936e0734)
+
 ### Link alla relazione progettata su Google Docs: [relazione-xml](https://docs.google.com/document/d/16Q87UcWEPophaX9hQOBLJ0TQ1nj_yhVQ8UUvzOkHOcw/edit?usp=sharing)
 
 Look at the [Nuxt 3 documentation](https://nuxt.com/docs/getting-started/introduction) to learn more.
