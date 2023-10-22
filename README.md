@@ -2,7 +2,9 @@
 
 _Relazione TPSI 5CIA_
 
-<img src="https://github.com/MrTartuf0/restaurant-xml/assets/79630556/91b720d7-fb35-48df-9172-cde4ba6e5f48" height="100px" align="center">
+<p align="center" class="padding-bottom: 48px">
+  <img src="https://github.com/MrTartuf0/restaurant-xml/assets/79630556/91b720d7-fb35-48df-9172-cde4ba6e5f48" height="100px">
+</p>
 
 ![image](https://github.com/MrTartuf0/restaurant-xml/assets/79630556/3f9d69e0-63dc-479f-b113-e0d4936e0734)
 
