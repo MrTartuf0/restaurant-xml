@@ -55,6 +55,7 @@ defineExpose({
 defineProps({
   data: {
     type: Object,
+    default: {},
     required: true,
   }
 })

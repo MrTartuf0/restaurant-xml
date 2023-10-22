@@ -16,7 +16,7 @@
       <div class="pt-4 flex gap-3 cursor-pointer">
         <img class="w-6" src="~/assets/icons/star.svg" alt="star">
         <div class="leading-5">
-          <p class="text-green">{{ data?.rating}}</p>
+          <p class="text-green">{{ data?.rating }}</p>
           <p class="text-sm">Vedi {{ data?.ratingNumber }} recensioni</p>
         </div>
         <img class="w-4" src="~/assets/icons/arrow.svg" alt="arrow">
@@ -25,7 +25,8 @@
   </header>
 
   <nav class="px-16 py-6 gap-2 flex border-t border-t-black/10 sticky top-0 bg-white">
-    <ItemNavbar v-for="item in data?.menu.category">
+    <ItemNavbar :href="'#' + item.shortName" v-for="item in data?.menu.category">
+      {{ currentSection }}
       {{ item.name }}
     </ItemNavbar>
   </nav>
@@ -45,21 +46,25 @@
         </div>
       </div>
       <div v-for="item in data?.menu.category">
-        <h1 class="pt-8 pb-4 text-[22px] font-bold">
-          {{ item.name }}
-        </h1>
+        <div class="absolute">
+          <div class="relative bottom-16 tofElement" :id="item.shortName"/>
+        </div>
+        <div class="pb-4">
+          <h1 class="pt-8 text-[22px] font-bold">
+            {{ item.name }}
+          </h1>
+          <p class="text-coal-400">
+            {{ item.description }}
+          </p>
+        </div>
         <div class="grid grid-cols-3 gap-4">
-          <FoodCard v-for="product in item.product" :data="product">
-            <!-- <h2>{{ product.name }}</h2> -->
-            <!-- <p>{{ product.description }}</p> -->
-            <!-- <p>{{ product.price }}</p> -->
-          </FoodCard>
+          <FoodCard @click="$refs.modalFood.openModal(product)" v-for="product in item.product" :data="product" />
           <!-- <p>{{ data?.menu.category[0].product[0]?.outOfStock }}</p> -->
         </div>
       </div>
     </section>
     <aside>
-      <div class="bg-white px-4 pb-4 border border-coal-100">
+      <div class="bg-white px-4 pb-4 border border-coal-100 sticky top-[104px]">
         <div class="flex flex-col gap-1 items-center pt-8">
           <img class="w-12" src="~/assets/icons/basket.svg" alt="basket">
           <p class="text-coal-300">Il carrello è vuoto</p>
@@ -70,24 +75,21 @@
   </main>
 
   <AppModal ref="infoModal" :data="data"/>
-  <FoodModal ref="modalFood" :data="data"/>
+  <FoodModal ref="modalFood"/>
 
 </template>
 
-<script>
-let data = ref()
-</script>
 <script setup>
 import XMLHttpRequest from 'xhr2'
+const data = ref()
 
 var xhttp = new XMLHttpRequest();
 onMounted(() => {
   xhttp.onreadystatechange = function () {
     if (this.readyState == 4 && this.status == 200) {
       data.value = xml2json(this.responseXML).restaurant
-      console.log(xml2json(this.responseXML).restaurant);
+      // console.log(xml2json(this.responseXML).restaurant);
       // console.log(this.responseXML.getElementsByTagName("restaurant")[0]);
-      // data= this.responseXML
     }
   };
   xhttp.open("GET", "_nuxt/data.xml", true);
@@ -114,7 +116,6 @@ function xml2json(srcDOM) {
   }
   return jsonResult;
 }
-
 </script>
 
 <style scoped>

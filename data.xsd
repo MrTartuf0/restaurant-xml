@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:element name="restaurant">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name="name" type="xs:string"/>
+        <xs:element name="type" type="xs:string"/>
+        <xs:element name="distance" type="distance"/>
+        <xs:element name="description" type="xs:string"/>
+        <xs:element name="phoneNumber" type="phoneNumber"/>
+        <xs:element name="address" type="xs:string"/>
+        <xs:element name="bannerImg" type="imagePath"/>
+        <xs:element name="rating" type="xs:string"/>
+        <xs:element name="ratingNumber" type="xs:integer"/>
+        <xs:element name="minimumOrder" type="price"/>
+        <xs:element name="openingHour" type="hour"/>
+        <xs:element name="menu">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="category" maxOccurs="unbounded">
+                <xs:complexType>
+                  <xs:sequence>
+                    <xs:element name="name" type="xs:string"/>
+                    <xs:element name="shortName" type="xs:string"/>
+                    <xs:element name="description" type="xs:string" minOccurs="0" maxOccurs="1"/>
+                    <xs:element name="product" maxOccurs="unbounded">
+                      <xs:complexType>
+                        <xs:sequence>
+                          <xs:element name="name" type="xs:string"/>
+                          <xs:element name="description" type="xs:string" minOccurs="0" maxOccurs="1"/>
+                          <xs:element name="price" type="price"/>
+                          <xs:element name="image" type="imagePath" minOccurs="0" maxOccurs="1"/>
+                        </xs:sequence>
+                      </xs:complexType>
+                    </xs:element>
+                  </xs:sequence>
+                </xs:complexType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+
+
+  <xs:simpleType name="distance">
+    <xs:restriction base="xs:string">
+      <xs:pattern value="\d{1,}(.\d{2})?\skm"/>
+    </xs:restriction>
+  </xs:simpleType>
+
+  <xs:simpleType name="phoneNumber">
+    <xs:restriction base="xs:string">
+      <xs:pattern value="\+\d{1,}"/>
+    </xs:restriction>
+  </xs:simpleType>
+
+  <xs:simpleType name="imagePath">
+    <xs:restriction base="xs:string">
+      <xs:pattern value="_nuxt\/assets\/img\/[A-z\d\-_]+\.(jpeg|jpg|png|gif|bmp|tiff|ico|svg|webp)"/>
+    </xs:restriction>
+  </xs:simpleType>
+
+  <xs:simpleType name="price">
+    <xs:restriction base="xs:string">
+      <xs:pattern value="\d{1,}(,\d{2})?\s€"/>
+    </xs:restriction>
+  </xs:simpleType>
+
+  <xs:simpleType name="hour">
+    <xs:restriction base="xs:string">
+      <xs:pattern value="([0-1][0-9]|2[0-3]):[0-5][0-9]"/>
+    </xs:restriction>
+  </xs:simpleType>
+  
+</xs:schema>

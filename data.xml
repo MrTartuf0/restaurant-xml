@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!-- <?xml-model href="file.xsd" type="application/xml" schematypens="http://www.w3.org/2001/XMLSchema"?> -->
+<?xml-model href="data.xsd" type="application/xml" schematypens="http://www.w3.org/2001/XMLSchema"?>
 <restaurant>
   <name>Rosticceria I Mori</name>
   <type>Pizza · Italiano</type>
@@ -84,11 +84,13 @@
         <name>CROCCHE ' VERDI</name>
         <description>CROCCHE' DI PATATE CON MORTADELLA CROCCANTE E PISTACCHIO, 6PZ.</description>
         <price>7,50 €</price>
+        <image>_nuxt/assets/img/croccheVerdi.jpeg</image>
       </product>
       <product>
         <name>CROCCHE' GIALLI</name>
         <description>CROCCHE' DI PATATE CON SALSA CHEDDAR E BECON, 6PZ.</description>
         <price>7,50 €</price>
+        <image>_nuxt/assets/img/croccheGialli.jpeg</image>
       </product>
       <product>
         <name>STREET FOOD</name>
@@ -114,6 +116,7 @@
         <name>FRITTURA DI PESCE</name>
         <description>CALAMARI E GAMBERI</description>
         <price>15,00 €</price>
+        <image>_nuxt/assets/img/fritturaMista.jpeg</image>
       </product>
     </category>
     <category>
@@ -148,6 +151,7 @@
         <name>MARGHERITA</name>
         <description>BIGA 48H, POMODORO, FIOR DI LATTE, BASILICO E OLIO EVO</description>
         <price>6,00 €</price>
+        <image>_nuxt/assets/img/margherita.jpeg</image>
       </product>
       <product>
         <name>PORCINI</name>
@@ -196,6 +200,12 @@
       <product>
         <name>CANNOLO</name>
         <price>3,50 €</price>
+      </product>
+      <product>
+        <name>CANNOLO AL PISTACCHIO</name>
+        <description>RICOTTA, GOCCE DI CIOCCOLATO E GRANELLA DI PISTACCHIO</description>
+        <price>3,50 €</price>
+        <image>_nuxt/assets/img/cannoloPistacchio.jpeg</image>
       </product>
       <product>
         <name>SFOGLIA</name>

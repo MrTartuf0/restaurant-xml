@@ -5,13 +5,15 @@
       <div class="cursor-pointer absolute top-2 right-4 bg-white p-2 rounded-full shadow">
         <img @click="closeModal()" class="w-6 " src="~/assets/icons/close.svg" alt="close">
       </div>
-      <div class="h-[315px] placeholder">
-        <img class="w-full h-full object-cover" src="~/assets/img/abburro.jpeg" alt="food">
+      <div class="h-[315px] w-[576px] placeholder">
+        <img v-show="payload?.image" class="w-full h-full object-cover" :src="payload?.image" alt="food">
       </div>
       <main class="pt-4 px-4 pb-6">
-        <h1 class="font-stratos text-3xl">ABBURRO</h1>        
+        <h1 class="font-stratos text-3xl">
+          {{ payload?.name }}
+        </h1>        
         <p class="pt-2">
-          RISO ZAFFERANO, BESCIAMELLA, PROSCIUTTO COTTO E MORTADELLA
+          {{ payload?.description }}
         </p>
       </main>
       <section class="p-6">
@@ -22,7 +24,7 @@
           </p>
           <img @click="counter++" class="w-6 cursor-pointer" src="~/assets/icons/plus.svg" alt="plus">
         </div>
-        <AppButton>Aggiungi per 3,20 €</AppButton>
+        <AppButton>Aggiungi per {{ parseFloat(payload?.price.replace(' €','').replace(',', '.')) * counter }}</AppButton>
       </section>
     </div>
   </div>
@@ -44,25 +46,21 @@ section {
 
 <script setup>
 // Ref variables
-const isOpen = ref(true)
+const isOpen = ref(false)
 const counter = ref(1)
+const payload = ref()
+
 // Functions
 function closeModal() {
   isOpen.value = false
 }
-function openModal() {
+function openModal(data) {
+  payload.value = data
   isOpen.value = true
 }
 // Expose
 defineExpose({
   openModal,
   closeModal
-})
-// Props
-defineProps({
-  data: {
-    type: Object,
-    required: true,
-  }
 })
 </script>
